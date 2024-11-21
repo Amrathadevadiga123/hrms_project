@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>View Leave Application</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+  <div class="bg-primary text-white text-center p-3">
+    <h2>Leave Application Details</h2>
+  </div>
+</header>
+<main>
+  <div class="container mt-5">
+    <h1 class="text-center">Leave Application</h1>
+    <div class="card shadow-sm p-4">
+      <!-- Display Leave Application Details -->
+      <h4>ID: <span th:text="${leaveApplication.id}"></span></h4>
+      <h4>Reason: <span th:text="${leaveApplication.leaveReason}"></span></h4>
+      <h4>Start Date: <span th:text="${leaveApplication.startDate}"></span></h4>
+      <h4>End Date: <span th:text="${leaveApplication.endDate}"></span></h4>
+      <h4>Status: <span th:text="${leaveApplication.status}"></span></h4>
+    </div>
+  </div>
+</main>
+</body>
+</html>
